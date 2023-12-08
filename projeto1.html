@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTES -->
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <!-- FIM BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
+    <title>Entrevistando Pablo</title>
+</head>
+<body>
+    
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="Logo do IF Cast" width="100px">
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="index.html" target="_blank">Início</a></li>
+                    <li><a href="#especiliadades">Vídeo</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#formulario">
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
+    </header>
+
+    
+
+    <main>
+        <section id="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Podcast<span>!</span></h1>
+                        <p>Hoje estaremos entrevistando um convidado inédito, Pablo, primo de um de nosso grupo, veja como vai ser.</p>
+
+                        <div class="btn-contato">
+                            <a href="#formulario">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-site-->
+
+                    <div class="img-topo-site">
+                        <img src="images/pessoa.png" alt="">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <section id="especiliadades">
+            <div class="interface">
+                <h2 class="titulo">VEJA COM <span>A GENTE.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Website</h3>
+                        <p>Nossos dois programadores incríveis chamado Julio e Kauã, fizeram essa obra de arte para nós hospedamos este vídeo :D</p>
+                    </div><!--especialidades-box-->
+    
+                    <div class="especialidades-box">
+                        <i class="bi bi-youtube"></i>
+                        <h3>Vídeo</h3>
+                        <video src="caminho/para/o/vídeo" controls></video>
+                        <p>Veja com atenção em, para não perder nada do vídeo.</p>
+                    </div><!--especialidades-box-->
+    
+                    <div class="especialidades-box">
+                        <i class="bi bi-wordpress"></i>
+                        <h3>Se Liga</h3>
+                        <p>Depois de ver o vídeo, entre em contato com a gente, para relatar algum errou ou avaliar a gente, nos adorariamos</p>
+                    </div><!--especialidades-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especiliadades-->
+        <br>
+        <section id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/foto.png" alt="">
+                    </div><!--img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2> IF Cast<span>IF Cast</span></h2>
+                        <p>Somos um grupo de estudantes do Instituto Federal de São Paulo Campus Salto, composto por 6 pessoas, formado por Julio, Kauã, Marco, Luiz, Matheus e Lucas.</p>
+                        <p>Criamos esse site pois estamos em busca de fazer um podcast para um trabalho, pretendemos continuar com isso para ver no que dá. É isso agradecemos</p>
+                        <div class="btn-social">
+                            <a href="https://instagram.com/if_cast1?igshid=MzMyNGUyNmU2YQ==" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://www.youtube.com/@ifpodcast" target="_blank"><button><i class="bi bi-youtube"></i></button></a>
+                        </div><!--btn-social-->
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+
+        <section id="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALE <span>CONOSCO.</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
+
+    </main>
